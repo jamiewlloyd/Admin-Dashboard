@@ -5,4 +5,76 @@ body {
    font-style: normal;
    font-variation-settings:
       "wdth" 100;
+   margin: 0;
+
+}
+
+#wrapper {
+   width: 100%;
+   min-height: 100vh;
+   background-color: #dedef5;
+   display: grid;
+   grid-template-columns: 300px 1fr 300px;
+   grid-template-rows: 180px 1fr 1fr;
+}
+
+/* Sidebar */
+#sidebar {
+   width: 100%;
+   height: 100%;
+   background-color: #468bd0;
+   grid-column: 1/2;
+   grid-row: 1/4;
+}
+
+/* Header */
+#header {
+   width: 100%;
+   height: 100%;
+   background-color: white;
+   grid-column: 2/4;
+   grid-row: 1/2;
+   display: grid;
+   grid-template-columns: 1fr 400px;
+   grid-template-rows: 1fr 1fr;
+}
+
+#search {
+   width: calc(100% - 30px);
+   display: grid;
+   grid-template-columns: 50px 1fr;
+   align-items: center;
+   justify-items: center;
+   padding: 0 15px;
+}
+
+#search-bar {
+   width: 100%;
+   max-width: 600px;
+   height: 30px;
+   background-color: #e8e8f6;
+   border-radius: 50px;
+   justify-self: start;
+}
+
+.search-icon {
+   height: 25px;
+}
+
+#profile {
+   width: 100%;
+   background-color: green;
+}
+
+.notifications {
+   height: 25px;
+}
+
+/* Main */
+#main-content {
+   width: 100%;
+   height: 100%;
+   background-color: #e8e8f6;
+   grid-column: 2/4;
+   grid-row: 2/4;
 }
