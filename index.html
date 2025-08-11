@@ -15,7 +15,7 @@
 </head>
 
 <body>
-   <div id="wrapper">
+   <div id="sticky">
       <div id="sidebar">
          <div id="logo">
             <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -131,10 +131,30 @@
             <button>Share</button>
          </div>
       </header>
+   </div>
+   </div>
+   <div id="wrapper">
+
       <main id="main-content">
-         <div id="projects"></div>
-         <div id="announcements"></div>
-         <div id="trending"></div>
+         <div id="projects">
+            <h2 class="section-title">Your Projects</h2>
+            <div id="cards">
+               <div class="card content-card"></div>
+               <div class="card content-card"></div>
+               <div class="card content-card"></div>
+               <div class="card content-card"></div>
+               <div class="card content-card"></div>
+               <div class="card content-card"></div>
+            </div>
+         </div>
+         <div id="announcements">
+            <h2 class="section-title">Announcements</h2>
+            <div id="announcement-card" class="card"></div>
+         </div>
+         <div id="trending">
+            <h2 class="section-title">Trending</h2>
+            <div id="trending-card" class="card"></div>
+         </div>
       </main>
    </div>
    <script type="text/javascript" src="js/script.js"></script>
