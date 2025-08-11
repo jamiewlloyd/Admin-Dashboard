@@ -35,8 +35,8 @@ body {
    grid-column: 2/4;
    grid-row: 1/2;
    display: grid;
-   grid-template-columns: 1fr 400px;
-   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 420px;
+   grid-template-rows: 40% 60%;
 }
 
 #search {
@@ -51,7 +51,7 @@ body {
 #search-bar {
    width: 100%;
    max-width: 600px;
-   height: 30px;
+   height: 35px;
    background-color: #e8e8f6;
    border-radius: 50px;
    justify-self: start;
@@ -59,15 +59,87 @@ body {
 
 .search-icon {
    height: 25px;
+   cursor: pointer;
 }
 
 #profile {
    width: 100%;
-   background-color: green;
+   display: grid;
+   grid-template-columns: 1fr 30px 100px 20px;
+   align-items: center;
+   justify-items: center;
+}
+
+.profile-pic {
+   border-radius: 50%;
+}
+
+.profile-main {
+   height: 50px;
+   grid-column: 3;
+   cursor: pointer;
 }
 
 .notifications {
    height: 25px;
+   grid-column: 2;
+   cursor: pointer;
+}
+
+#actions {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+   justify-items: start;
+}
+
+button {
+   background-color: #468bd0;
+   color: white;
+   font-weight: 600;
+   font-size: 16px;
+   width: 100px;
+   height: 40px;
+   border: 0px;
+   border-radius: 50px;
+   cursor: pointer;
+}
+
+#account-welcome {
+   display: grid;
+   grid-template-columns: 20px 90px 1fr;
+   grid-template-rows: 15px 25px 1fr;
+   align-items: center;
+   justify-items: center;
+}
+
+.profile-welcome {
+   height: 70px;
+   grid-column: 2;
+   grid-row: 1/4;
+}
+
+.greeting {
+   grid-column: 3;
+   grid-row: 2;
+   align-self: end;
+   justify-self: start;
+   margin: 0;
+   padding: 0px 0px 0px 5px;
+}
+
+#name {
+   grid-column: 3;
+   grid-row: 3;
+   align-self: start;
+   justify-self: start;
+   padding: 2px 0px 0px 5px;
+}
+
+h1 {
+   font-weight: 600;
+   font-size: 24px;
+   margin: 0;
 }
 
 /* Main */
