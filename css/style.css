@@ -36,16 +36,16 @@ body {
    grid-row: 1/2;
    display: grid;
    grid-template-columns: 1fr 420px;
-   grid-template-rows: 40% 60%;
+   grid-template-rows: 1fr 1fr;
 }
 
 #search {
    width: calc(100% - 30px);
    display: grid;
-   grid-template-columns: 50px 1fr;
+   grid-template-columns: 35px 1fr;
    align-items: center;
-   justify-items: center;
-   padding: 0 15px;
+   justify-items: start;
+   padding: 0 30px;
 }
 
 #search-bar {
@@ -54,7 +54,6 @@ body {
    height: 35px;
    background-color: #e8e8f6;
    border-radius: 50px;
-   justify-self: start;
 }
 
 .search-icon {
@@ -65,7 +64,7 @@ body {
 #profile {
    width: 100%;
    display: grid;
-   grid-template-columns: 1fr 30px 100px 20px;
+   grid-template-columns: 1fr 60px 45px 40px;
    align-items: center;
    justify-items: center;
 }
@@ -75,7 +74,7 @@ body {
 }
 
 .profile-main {
-   height: 50px;
+   height: 45px;
    grid-column: 3;
    cursor: pointer;
 }
@@ -107,14 +106,14 @@ button {
 
 #account-welcome {
    display: grid;
-   grid-template-columns: 20px 90px 1fr;
+   grid-template-columns: 30px 75px 1fr;
    grid-template-rows: 15px 25px 1fr;
    align-items: center;
-   justify-items: center;
+   justify-items: start;
 }
 
 .profile-welcome {
-   height: 70px;
+   height: 65px;
    grid-column: 2;
    grid-row: 1/4;
 }
@@ -123,17 +122,14 @@ button {
    grid-column: 3;
    grid-row: 2;
    align-self: end;
-   justify-self: start;
    margin: 0;
-   padding: 0px 0px 0px 5px;
 }
 
 #name {
    grid-column: 3;
    grid-row: 3;
    align-self: start;
-   justify-self: start;
-   padding: 2px 0px 0px 5px;
+   padding-top: 2px;
 }
 
 h1 {
