@@ -9,6 +9,17 @@ body {
 
 }
 
+h1 {
+   font-weight: 600;
+   margin: 0;
+}
+
+h2 {
+   font-size: 22px;
+   font-weight: 500;
+   margin: 0;
+}
+
 #wrapper {
    width: 100%;
    min-height: 100vh;
@@ -27,6 +38,60 @@ body {
    grid-row: 1/4;
 }
 
+#logo {
+   height: 90px;
+   color: white;
+   display: grid;
+   grid-template-columns: 20px 70px 1fr;
+   align-items: center;
+   justify-items: start;
+}
+
+.sidebar-title {
+   grid-column: 3;
+}
+
+.logo-svg {
+   width: 60px;
+   fill: white;
+   grid-column: 2;
+}
+
+ul {
+   list-style: none;
+   color: white;
+   display: grid;
+   padding-left: 35px;
+}
+
+#nav-list {
+   grid-template-rows: repeat(6, 55px);
+   margin-top: 20px;
+}
+
+#setting-list {
+   grid-template-rows: repeat(3, 55px);
+   margin-top: 60px;
+}
+
+li {
+   display: grid;
+   grid-template-columns: 30px 1fr;
+   align-items: center;
+   cursor: pointer;
+}
+
+.nav-icon {
+   width: 30px;
+   fill: white;
+   justify-self: end;
+}
+
+.nav-title {
+   justify-self: start;
+   padding-left: 25px;
+}
+
 /* Header */
 #header {
    width: 100%;
@@ -37,6 +102,8 @@ body {
    display: grid;
    grid-template-columns: 1fr 420px;
    grid-template-rows: 1fr 1fr;
+   box-shadow: 0 4px 8px -8px rgba(0, 0, 0, 0.5);
+   z-index: 10;
 }
 
 #search {
@@ -130,12 +197,7 @@ button {
    grid-row: 3;
    align-self: start;
    padding-top: 2px;
-}
-
-h1 {
-   font-weight: 600;
    font-size: 24px;
-   margin: 0;
 }
 
 /* Main */
