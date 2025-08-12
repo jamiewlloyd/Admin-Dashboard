@@ -112,7 +112,7 @@ li {
    grid-column: 2/4;
    grid-row: 1/2;
    display: grid;
-   grid-template-columns: 1fr 420px;
+   grid-template-columns: 1fr 250px 170px;
    grid-template-rows: 1fr 1fr;
    box-shadow: 0 4px 8px -6px rgba(0, 0, 0, 0.5);
    -webkit-box-shadow: 0 4px 8px -6px rgba(0, 0, 0, 0.5);
@@ -122,6 +122,8 @@ li {
 }
 
 #search {
+   grid-column: 1/3;
+   grid-row: 1;
    width: calc(100% - 30px);
    display: grid;
    grid-template-columns: 35px 1fr;
@@ -144,6 +146,8 @@ li {
 }
 
 #profile {
+   grid-column: 3/4;
+   grid-row: 1;
    width: 100%;
    display: grid;
    grid-template-columns: 1fr 60px 45px 40px;
@@ -168,6 +172,8 @@ li {
 }
 
 #actions {
+   grid-column: 2/4;
+   grid-row: 2;
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    align-items: center;
@@ -187,6 +193,8 @@ button {
 }
 
 #account-welcome {
+   grid-column: 1/2;
+   grid-row: 2;
    display: grid;
    grid-template-columns: 30px 75px 1fr;
    grid-template-rows: 15px 25px 1fr;
@@ -273,12 +281,12 @@ button {
 }
 
 .content-card {
-   height: 250px;
+   height: 215px;
    width: 370px;
    background-color: white;
    border-left: 10px solid #eec368;
    display: grid;
-   grid-template-rows: 45px 155px 50px;
+   grid-template-rows: 45px 120px 50px;
 }
 
 #card-actions {
